@@ -15,7 +15,8 @@
     "async": "^2.0.0-rc.5",
     "cheerio": "^0.20.0",
     "extend": "^3.0.0",
-    "request": "^2.72.0"
+    "request": "^2.72.0",
+    "sprintf-js": "^1.0.3"
   },
   "devDependencies": {
     "eslint": "^2.11.1",
