@@ -1,8 +1,11 @@
 {
   "name": "netflix2",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A client library to access the not-so-public Netflix Shakti API.",
-  "keywords": ["netflix", "api"],
+  "keywords": [
+    "netflix",
+    "api"
+  ],
   "license": "MIT",
   "author": "Lana Larsen <lana@transcode.rs>",
   "homepage": "https://github.com/genderquery/node-netflix2",
