@@ -37,7 +37,7 @@
   "manageProfilesUrl": "/ManageProfiles",
   "pathEvaluatorEndpointUrl": "/pathEvaluator",
   "profilesEndpointUrl": "/profiles",
-  "ratingHistoryEndpointUrl": "/ratingHistory",
+  "ratingHistoryEndpointUrl": "/ratinghistory",
   "setVideoRatindEndpointUrl": "/setVideoRating",
   "switchProfileEndpointUrl": "/profiles/switch",
   "yourAccountUrl": "/YourAccount"
