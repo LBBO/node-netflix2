@@ -39,6 +39,7 @@
   "profilesEndpointUrl": "/profiles",
   "ratingHistoryEndpointUrl": "/ratinghistory",
   "setVideoRatindEndpointUrl": "/setVideoRating",
+  "setThumbRatingEndpointUrl": "/setThumbRating",
   "switchProfileEndpointUrl": "/profiles/switch",
   "yourAccountUrl": "/YourAccount"
 }
