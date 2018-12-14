@@ -41,5 +41,6 @@
   "setVideoRatindEndpointUrl": "/setVideoRating",
   "setThumbRatingEndpointUrl": "/setThumbRating",
   "switchProfileEndpointUrl": "/profiles/switch",
-  "yourAccountUrl": "/YourAccount"
+  "yourAccountUrl": "/YourAccount",
+  "viewingActivity": "/viewingactivity"
 }
