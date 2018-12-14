@@ -62,8 +62,11 @@ netflix.getRatingHistory(function (error, ratings) {
 ```
 
 ### Set Video Rating
+On Netflix, users used to rate videos with stars. Then Netflix switched over to thumbs and now some users don't even 
+know about the stars. You can set both types of ratings by using these two functions:
 ```
-netflix.setVideoRating(movieID, rating, callback)
+netflix.setStarRating(movieID, rating, callback)
+netflix.setThumbRating(movieID, rating, callback)
 ```
 
 ## Warning
