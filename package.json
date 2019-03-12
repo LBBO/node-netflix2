@@ -7,11 +7,11 @@
     "api"
   ],
   "license": "MIT",
-  "author": "Avery Larsen <avery@stoatly.com>",
-  "homepage": "https://github.com/genderquery/node-netflix2",
+  "author": "Michael Kuckuk <mdk@kuckuk.com>",
+  "homepage": "https://github.com/LBBO/node-netflix2",
   "repository": {
     "type": "git",
-    "url": "https://github.com/genderquery/node-netflix2.git"
+    "url": "https://github.com/LBBO/node-netflix2.git"
   },
   "main": "./lib/netflix2.js",
   "dependencies": {
