@@ -34,6 +34,7 @@ netflix.login(credentials, callback)
 ```
 
 ### Browse
+Browse movies: pass the genre (id), which page number (if more are available) and how many iterms per page to display along with the callback for the result.
 ```javascript
 /**
  * Browse movies, to simply get all films use Category ID 34399
@@ -46,11 +47,10 @@ netflix.login(credentials, callback)
 netflix.browse(genreId, page, perPage, function (error, result) {
   if(error){
     console.error(error);
-  }else{
+  } else {
     console.log(JSON.stringify(result));
   }
 })
-
 ``` 
 
 ### Get Profiles
@@ -83,16 +83,19 @@ netflix.getRatingHistory(function (error, ratings) {
 
 ### Get Viewing History
 ```javascript
-netflix.getViewingHistory(function (error, viewing) {
-  ratings === [
-    {"title":"Futurama","movieID":70153380,"yourRating":4.0, ...},
-    {"title":"Super Troopers","movieID":60022689,"yourRating":4.0, ...},
-    ...
-  ]
+netflix.getViewingHistory(function (error, result) {
+  if(error){
+    console.error(error);
+  } else {
+    console.log(JSON.stringify(result));
+  }
 })
 ```
 
 ### Hide Viewing History for a movie/series
+
+Hide the viewing activity with the option of clearing the whole series or not.
+
 ```javascript
 /**
  * Hides viewing history for a specific movie or series
@@ -102,12 +105,16 @@ netflix.getViewingHistory(function (error, viewing) {
 netflix.hideMovieViewingHistory(movieID, hideAllSeries, function (error, result){
   if(error){
     console.error(error);
-  }else{
+  } else {
     console.log(JSON.stringify(result));
   }
 })
 ```
 ### Hide Viewing History for everything
+
+Hide the complete viewing history.
+**Note:** this may not always reset the viewing history per series
+
 ```javascript
 /**
  * Hides ALL viewing history: this may not always reset the viewing history per series (**no UNDO!**)
@@ -117,7 +124,7 @@ netflix.hideMovieViewingHistory(movieID, hideAllSeries, function (error, result)
  netflix.hideAllViewingHistory(function (error, result){
   if(error){
     console.error(error);
-  }else{
+  } else {
     console.log(JSON.stringify(result));
   }
 })
@@ -136,7 +143,7 @@ netflix.setThumbRating(movieID, rating, callback)
 netflix.getActiveProfile(function (error, result){
   if(error){
     console.error(error);
-  }else{
+  } else {
     console.log(JSON.stringify(result));
   }
 })
