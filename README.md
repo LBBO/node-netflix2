@@ -102,7 +102,7 @@ netflix.hideSingleEpisodeFromViewingHistory(movieID, function (error, result){
   if(error){
     console.error(error);
   } else {
-    // Episode / movie has been hidden
+    console.log(JSON.stringify(result));
   }
 })
 
@@ -111,7 +111,7 @@ netflix.hideEntireSeriesFromViewingHistory(movieID, function (error, result){
   if(error){
     console.error(error);
   } else {
-    // Series has been hidden
+    console.log(JSON.stringify(result));
   }
 })
 ```
@@ -131,7 +131,7 @@ Hide the complete viewing history.
   if(error){
     console.error(error);
   } else {
-    // Entire viewing history has been hidden
+    console.log(JSON.stringify(result));
   }
 })
 ```
