@@ -92,25 +92,31 @@ netflix.getViewingHistory(function (error, result) {
 })
 ```
 
-### Hide Viewing History for a movie/series
+### Hide Viewing History
 
-Hide the viewing activity with the option of clearing the whole series or not.
+Hide a single episode / a movie or an entire series from viewing activity
 
 ```javascript
-/**
- * Hides viewing history for a specific movie or series
- * @param movieID  - the ID of the movie (e.g. 80057281 for "Stranger Things")
- * @param seriesAll - true if you want to clear the whole series, false otherwise
- */
-netflix.hideMovieViewingHistory(movieID, hideAllSeries, function (error, result){
+// Hide single episode / movie
+netflix.hideSingleEpisodeFromViewingHistory(movieID, function (error, result){
   if(error){
     console.error(error);
   } else {
-    console.log(JSON.stringify(result));
+    // Episode / movie has been hidden
+  }
+})
+
+// Hide entire series
+netflix.hideEntireSeriesFromViewingHistory(movieID, function (error, result){
+  if(error){
+    console.error(error);
+  } else {
+    // Series has been hidden
   }
 })
 ```
-### Hide Viewing History for everything
+
+### Hide complete Viewing History
 
 Hide the complete viewing history.
 **Note:** this may not always reset the viewing history per series
@@ -118,14 +124,14 @@ Hide the complete viewing history.
 ```javascript
 /**
  * Hides ALL viewing history: this may not always reset the viewing history per series (**no UNDO!**)
- * use hideMovieViewingHistory passing the movieID and setting seriesAll to true
- * to reset that series' history back to the first episode
+ * use hideEntireSeriesFromViewingHistory passing the movieID to reset that series' history back
+ * to the first episode
  */
  netflix.hideAllViewingHistory(function (error, result){
   if(error){
     console.error(error);
   } else {
-    console.log(JSON.stringify(result));
+    // Entire viewing history has been hidden
   }
 })
 ```
