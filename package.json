@@ -13,12 +13,12 @@
     "type": "git",
     "url": "https://github.com/LBBO/node-netflix2.git"
   },
-  "main": "./lib/netflix2.js",
+  "main": "./lib/netflix2.class.js",
   "dependencies": {
-    "async": "^2.0.0-rc.5",
     "cheerio": "^0.20.0",
     "extend": "^3.0.0",
     "request": "^2.72.0",
+    "request-promise-native": "^1.0.7",
     "sprintf-js": "^1.0.3"
   },
   "devDependencies": {
