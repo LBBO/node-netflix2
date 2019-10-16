@@ -34,7 +34,7 @@ netflix.login(credentials, callback)
 ```
 
 ### Browse
-Browse movies: pass the genre (id), which page number (if more are available) and how many iterms per page to display along with the callback for the result.
+Browse movies: pass the genre (id), which page number (if more are available) and how many items per page to display along with the callback for the result.
 ```javascript
 /**
  * Browse movies, to simply get all films use Category ID 34399
