@@ -27,7 +27,7 @@ var netflix = require('netflix2')()
 You must call `login` before using any of the other below functions. This will set cookies, API endpoints, and the authURL that must used to make API calls.
 ```javascript
 var credentials = {
-  email: 'youremail@example.com'
+  email: 'youremail@example.com',
   password: 'yourpassword'
 }
 netflix.login(credentials, callback)
@@ -51,7 +51,7 @@ netflix.browse(genreId, page, perPage, function (error, result) {
     console.log(JSON.stringify(result));
   }
 })
-``` 
+```
 
 ### Get Profiles
 ```javascript
@@ -137,7 +137,7 @@ Hide the complete viewing history.
 ```
 
 ### Set Video Rating
-On Netflix, users used to rate videos with stars. Then Netflix switched over to thumbs and now some users don't even 
+On Netflix, users used to rate videos with stars. Then Netflix switched over to thumbs and now some users don't even
 know about the stars. You can set both types of ratings by using these two functions:
 ```javascript
 netflix.setStarRating(movieID, rating, callback)
