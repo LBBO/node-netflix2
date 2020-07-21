@@ -1,6 +1,6 @@
 {
   "name": "netflix2",
-  "version": "0.2.1",
+  "version": "1.0.0-beta.0",
   "description": "A client library to access the not-so-public Netflix Shakti API.",
   "keywords": [
     "netflix",
