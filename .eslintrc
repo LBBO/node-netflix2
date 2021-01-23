@@ -2,5 +2,13 @@
   "extends": "standard",
   "env": {
     "node": true
+  },
+  "rules": {
+    "no-trailing-spaces": "off",
+    "comma-dangle": "off",
+    "space-before-function-paren": "off"
+  },
+  "parserOptions": {
+    "ecmaVersion": 2017
   }
 }
