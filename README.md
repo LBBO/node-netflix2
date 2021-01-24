@@ -24,11 +24,14 @@ var netflix = require('netflix2')()
 ```
 
 ### Login
-You must call `login` before using any of the other below functions. This will set cookies, API endpoints, and the authURL that must used to make API calls.
+First, login to your Netflix account manually and retrieve your session's cookie by entering `document.cookie` in 
+your console.
+
+Next, you must call `login` before using any of the other below functions. This will set API endpoints, and the authURL 
+that must used to make API calls.
 ```javascript
 var credentials = {
-  email: 'youremail@example.com',
-  password: 'yourpassword'
+  cookies: '[value from console]'
 }
 netflix.login(credentials, callback)
 ```
