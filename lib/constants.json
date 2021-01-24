@@ -32,7 +32,7 @@
   ],
   "avatarUrl": "/ffe/profiles/avatars_v2/%1$dx%1$d/PICON_%2$03d.png",
   "baseSecureUrl": "https://secure.netflix.com/",
-  "baseUrl": "https://www.netflix.com/",
+  "baseUrl": "https://www.netflix.com",
   "loginUrl": "/Login",
   "manageProfilesUrl": "/ManageProfiles",
   "pathEvaluatorEndpointUrl": "/pathEvaluator",
