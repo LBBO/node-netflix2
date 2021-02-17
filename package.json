@@ -1,6 +1,6 @@
 {
   "name": "netflix2",
-  "version": "1.0.1",
+  "version": "2.0.0-beta.3",
   "description": "A client library to access the not-so-public Netflix Shakti API.",
   "keywords": [
     "netflix",
@@ -17,6 +17,7 @@
   "dependencies": {
     "cheerio": "^0.20.0",
     "extend": "^3.0.0",
+    "node-fetch": "^2.6.1",
     "request": "^2.72.0",
     "request-promise-native": "^1.0.7",
     "sprintf-js": "^1.0.3"
